@@ -1,0 +1,120 @@
+﻿<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>华云电力工程设计管理系统</title>
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+		<style type="text/css">
+			button {
+				margin-top: 35px;
+				left:88px;
+				
+				border-radius: 10px;
+				border: none;
+				position: relative;
+				padding: 0 4em;
+				cursor: pointer;
+				transition: 800ms ease all;
+				outline: none;
+			}
+			
+			button:hover {
+				background: #fff;
+				color: #1AAB8A;
+			}
+			
+			button:before,
+			button:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				height: 2px;
+				width: 0;
+				background: #1AAB8A;
+				transition: 400ms ease all;
+				
+			}
+			
+			button:after {
+				right: inherit;
+				top: inherit;
+				left: 0;
+				bottom: 0;
+			}
+			
+			button:hover:before,
+			button:hover:after {
+				width: 100%;
+				transition: 800ms ease all;
+				
+			}
+		.loginbm{
+			height:50px; 
+			line-height:50px; 
+			text-align:center; 
+			background:url(images/loginbg2.png) repeat-x;
+			position:absolute; 
+			bottom:0;
+			width:100%; 
+			color:#fff;
+		}
+		</style>
+		
+	</head>
+
+	<body>
+		<div class="container">
+			<div class="loginbox">
+				<div class="loginform">
+					<div class="clear" style="height:18.5px"></div>
+					<h2>浙江华云电力工程设计咨询管理系统</h2>
+					<form>
+						<table width="100%" border="0">
+							<tr>
+								<td>
+									<span>用户名</span>
+									<input class="uname" type="text" value="admin" onclick="JavaScript:this.value=''">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									<span>密码</span>
+									<input class="pword" type="password" />
+								</td>
+							</tr>
+							<label class="remember password">
+							<input class="in" type="checkbox" value="" checked="checked" />记住密码</label>
+							<label class="forgot Password"><a href="#">忘记密码？</a></label>
+							<tr>
+								<td height="180">
+									<button  class="logbtn"><a href="main.html" style="color:floralwhite ;" >登录</a></button>
+
+								</td>
+							</tr>
+						</table>
+					</form>
+						
+				</div>
+				
+			</div>
+				<div class="loginbm">版权所有 XXXXX .com 仅供参考，勿用于任何商业用途</div>
+		</div>
+		
+		
+
+	</body>
+
+</html>
+<!--<script>
+	$(function() {
+		$(".loginform form td input").focus(function() {
+			$(this).css("border-color", "#56c68b");
+		});
+		$(".loginform form td input").blur(function() {
+			$(this).css("border-color", "#bdbcbc");
+		});
+	});
+</script>-->

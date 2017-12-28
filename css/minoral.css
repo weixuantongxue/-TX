@@ -1,0 +1,42 @@
+
+  
+  body #content .tile .tile-header {
+    padding: 0px;
+    height: 160px;
+    }
+  
+      body #content .tile .tile-header.color h1,
+      body #content .tile .tile-widget.color h1,
+      body #content .tile .tile-body.color h1,
+      body #content .tile .tile-footer.color h1 {
+        color: white; }
+
+      body #content .tile .tile-header.color.greensea,
+      body #content .tile .tile-widget.color.greensea,
+      body #content .tile .tile-body.color.greensea,
+      body #content .tile .tile-footer.color.greensea {
+        background-color: #41d0bf; }
+   
+
+   
+
+/************************************/
+/************* TOOLTIPS *************/
+/************************************/
+#tooltip {
+  color: #717171;
+  font-size: 11px;
+  line-height: 11px;
+  display: none; }
+  #tooltip h1 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0; }
+
+
+
+
+
+

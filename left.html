@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script language="JavaScript" src="js/jquery.js"></script>
+
+<script type="text/javascript">
+$(function(){	
+	//导航切换
+	$(".menuson li").click(function(){
+		$(".menuson li.active").removeClass("active")
+		$(this).addClass("active");
+	});
+	
+	$('.title').click(function(){
+		var $ul = $(this).next('ul');
+		$('dd').find('ul').slideUp();
+		if($ul.is(':visible')){
+			$(this).next('ul').slideUp();
+		}else{
+			$(this).next('ul').slideDown();
+		}
+	});
+})	
+</script>
+<script type="text/javascript">
+
+ (function(){
+  var navWrap=document.getElementById("lefttop");
+  var nav1s=navWrap.getElementsByTagName("title");
+  for(var i=0,len=nav1s.length;i<len;i++){
+   nav1s[i].onclick=(function(i){
+    return function(){
+     for(var j=0;j<len;j++){
+      nav2s[j].style.display="none";
+     }
+     nav2s[i].style.display="block";
+    }
+   })(i)
+  }
+ })
+
+</script>
+
+<style type="text/css"> 
+	.biaoji{
+	display: inline-block;
+    width: 24px;
+    height: 22px;
+    background: url(images/msg1.png);
+    text-align: center;
+    font-weight: normal;
+    color: #fff;
+    font-size: 12px;
+    margin-right: 13px;
+    margin-top: 7px;
+    line-height: 18px;
+    }
+	
+	.hongqi{
+		display: inline-block;
+    width: 28px;
+    height: 26px;
+      position: absolute;
+top:45px ;
+    background: url(images/msg2.png);}
+	</style>
+
+
+</head>
+
+<body style="background:#f4f4f4;">
+	<div class="lefttop"><span></span>信息管理系统</div>
+    
+    <dl class="leftmenu">
+        
+    <dd>
+    <div class="title">
+    <span><img src="images/leftico01.png" /></span>办公管理<div class="hongqi"></div>
+    </div>
+    	<ul class="menuson">
+        <li class="active"><cite></cite><a href="index.html" target="rightFrame">事务申请 <b class="biaoji">8</b></a><i></i></li>
+        <li ><cite></cite><a href="right.html" target="rightFrame">工作汇报</a><i></i></li>
+        <li><cite></cite><a href="imgtable.html" target="rightFrame">图片数据表</a><i></i></li>
+        <li><cite></cite><a href="form.html" target="rightFrame">添加编辑</a><i></i></li>
+        <li><cite></cite><a href="imglist.html" target="rightFrame">图片列表</a><i></i></li>
+        <li><cite></cite><a href="imglist1.html" target="rightFrame">自定义</a><i></i></li>
+        <li><cite></cite><a href="tools.html" target="rightFrame">常用工具</a><i></i></li>
+        <li><cite></cite><a href="filelist.html" target="rightFrame">信息管理 <b class="biaoji">2</b></a><i></i></li>
+        <li><cite></cite><a href="tab.html" target="rightFrame">Tab页</a><i></i></li>
+        <li><cite></cite><a href="error.html" target="rightFrame">404页面</a><i></i></li>
+        </ul>    
+    </dd>
+        
+    
+    <dd>
+    <div class="title">
+    <span><img src="images/leftico02.png" /></span>系统基础管理
+    </div>
+    <ul class="menuson">
+        <li><cite></cite><a href="#">用户管理</a><i></i></li>
+        <li><cite></cite><a href="#">角色管理</a><i></i></li>
+        <li><cite></cite><a href="#">菜单管理</a><i></i></li>
+     <!--   <li><cite></cite><a href="#">权限管理</a><i></i></li>-->
+        </ul>     
+    </dd> 
+    
+    
+    <dd><div class="title"><span><img src="images/leftico03.png" /></span>系统监控管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="#">实时监控</a><i></i></li>
+      <!--  <li><cite></cite><a href="#">常用资料</a><i></i></li>
+        <li><cite></cite><a href="#">信息列表</a><i></i></li>
+        <li><cite></cite><a href="#">其他</a><i></i></li>-->
+    </ul>    
+    </dd>  
+    
+    
+    <dd><div class="title"><span><img src="images/leftico04.png" /></span>登陆信息管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="#">用户登录记录</a><i></i></li>
+       <!-- <li><cite></cite><a href="#">常用资料</a><i></i></li>
+        <li><cite></cite><a href="#">信息列表</a><i></i></li>
+        <li><cite></cite><a href="#">其他</a><i></i></li>-->
+    </ul>
+    
+    </dd>   
+    
+    
+     <dd><div class="title"><span><img src="images/leftico04.png" /></span>图谱管理</div>
+    <ul class="menuson">
+        <li><cite></cite><a href="#">上传图谱</a><i></i></li>
+        <!--<li><cite></cite><a href="#">常用资料</a><i></i></li>
+        <li><cite></cite><a href="#">信息列表</a><i></i></li>
+        <li><cite></cite><a href="#">其他</a><i></i></li>-->
+    </ul>
+    
+    </dd>   
+    
+    </dl>
+</body>
+</html>
